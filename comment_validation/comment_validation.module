@@ -61,6 +61,7 @@ function comment_validation_menu()
     'description' => t('Manage here the usernames or words that you do not want to allow in comments.'),
     'page callback' => 'drupal_get_form',
     'page arguments' => array('comment_validation_admin'),
+    'access arguments' => array('administer comment_validation settings'),
     'type' => MENU_NORMAL_ITEM,
    );
 
